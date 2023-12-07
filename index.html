@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Web App - Developed and Designed by Sahitya Satya</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis Web App</h1>
+        <p style="font-size: 14px; font-style: italic;">Developed by Sahitya Satya</p>
+
+        <form id="sentimentForm">
+            <label for="review">Enter your movie review:</label>
+            <textarea id="review" name="review" rows="4" cols="50"></textarea>
+            <br>
+            <button type="button" onclick="predictSentiment()">Predict Sentiment</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="static/script.js"></script>
+</body>
+</html>
